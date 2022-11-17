@@ -23,14 +23,15 @@ class CalcWrapper extends React.Component {
       return (
          <>
             <div className={styles.wrapper}>
+               <p>{this.state.suma}</p>
                {
+                  
                   this.props.items.map(item => (
                      <CalcItems addNumberFn={this.addNumber} {...item} />
                   ))
                }
                <Sum/>
             </div>
-            <p>{this.state.suma}</p>
          </>
       )
    }

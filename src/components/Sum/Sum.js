@@ -1,7 +1,7 @@
 import React from "react";
 
 const Sum = () => (
-  <p>Suma</p> 
+  <p></p> 
 );
 
 export default Sum;

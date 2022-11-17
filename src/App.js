@@ -45,8 +45,9 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <h1>Kalkulator</h1>
-        <CalcWrapper items={this.state.items}/>
+        <div className="wrapper">
+        <CalcWrapper   items={this.state.items}/>
+        </div>
       </>
     )
   }

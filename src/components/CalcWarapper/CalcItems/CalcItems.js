@@ -3,7 +3,7 @@ import styles from "./CalcItems.module.scss"
 
 const CalcItems =  ({item ,addNumberFn}) =>  
 
-    (
+    ( 
          <button
 
             onClick={() => {
