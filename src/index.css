@@ -12,6 +12,7 @@ body {
 .wrapper {
    position: relative;
    width: 423px;
+   top: 20px;
    height: 858px;
    margin: auto;
    background: linear-gradient(166.34deg, #373737 0%, #252628 22.9%, #000309 100%);

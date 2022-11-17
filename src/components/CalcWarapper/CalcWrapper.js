@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import CalcItems from "./CalcItems/CalcItems";
 import Sum from "../Sum/Sum.js"
 import styles from "./CalcWrapper.module.scss"
@@ -7,11 +7,17 @@ class CalcWrapper extends React.Component {
 
    state = {
       suma: '',
+      item: []
    }
    addNumber = (e) => {
-      const item = e;
-      if (e === '+') { 
+      const item =  e ;
+      if (e === '+') {
          
+         this.setState(prevState => ({
+            item: [...prevState.item +  this.state.suma]
+         }))
+      
+         console.log(this.state.item)
       }
       else {
          this.setState({
@@ -22,15 +28,16 @@ class CalcWrapper extends React.Component {
    render() {
       return (
          <>
+            <Sum 
+               suma={this.state.suma}
+               items={this.state.item}
+            ></Sum>
             <div className={styles.wrapper}>
-               <p>{this.state.suma}</p>
                {
-                  
                   this.props.items.map(item => (
                      <CalcItems addNumberFn={this.addNumber} {...item} />
                   ))
                }
-               <Sum/>
             </div>
          </>
       )
