@@ -1,6 +1,5 @@
 import React from "react";
 import './index.css'
-import Sum from "./components/Sum/Sum";
 import CalcWrapper from "./components/CalcWarapper/CalcWrapper";
 
 const numberItems = [
@@ -31,6 +30,9 @@ const numberItems = [
   {
     item: 9,
   },
+  {
+    item: '+',
+  },
 ]
 
 
@@ -44,7 +46,6 @@ class App extends React.Component {
     return (
       <>
         <h1>Kalkulator</h1>
-        <Sum />
         <CalcWrapper items={this.state.items}/>
       </>
     )
