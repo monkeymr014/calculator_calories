@@ -5,21 +5,5 @@ body {
    font-style: normal;
    font-weight: 600;
    font-size: 26px;
-   line-height: 39px;
-   display: flex;
-   align-items: center;
-   text-align: center;
-   color: #FBFBFB;
-   position: relative;
-   width: 423px;
-   height: 858px;
-   background: linear-gradient(166.34deg, #373737 0%, #252628 22.9%, #000309 100%);
-   border-radius: 40px;
-   padding: 0;
-}
-h1 {
-   position: absolute;
-   padding: 0;
-   top: 0;
-   margin-left: 2vmax;
+
 }
