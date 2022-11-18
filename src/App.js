@@ -31,6 +31,9 @@ const numberItems = [
     item: 9,
   },
   {
+    item: 'C',
+  },
+  {
     item: '+',
   },
 ]
