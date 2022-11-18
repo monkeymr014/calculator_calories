@@ -13,12 +13,11 @@ class CalcWrapper extends React.Component {
       const item = e;
       if (e === '+') {
          this.setState((prevState) => ({
-            item: parseInt(prevState.item) + parseInt(this.state.suma) 
+            item: parseInt(prevState.item) + parseInt(this.state.suma)
          }))
          this.setState({
             suma: ''
-         }
-         )
+         })
          console.log(this.state.item)
       }
       else if (e === 'C') {
@@ -39,7 +38,6 @@ class CalcWrapper extends React.Component {
                suma={this.state.suma}
                items={this.state.item}
             />
-
             <div className={styles.wrapper}>
                {
                   this.props.items.map(item => (
